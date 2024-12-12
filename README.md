@@ -1,5 +1,5 @@
 <header><h1>Coin Dash! jogo feito na Godot Engine</h1></header>
-<p>Jogo simples para aprendizado da engine, objetivo é pegar o máximo de moedas que conseguir antes do tempo acabar e evitar os cactos!</p>
+<p>Jogo simples feito com o intuito de aprender a engine e alguns conceitos básicos, o objetivo do jogo é pegar o máximo de moedas que conseguir antes do tempo acabar e evitar os cactos!</p>
 <p>Imagens do jogo pronto:</p>
 <div style="display: flex;">
     <img src="https://github.com/user-attachments/assets/3fa7eeab-759e-48a4-8b9c-5ac3cf50726e" alt="Imagem 1" style="margin-right: 10px;">

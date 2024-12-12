@@ -12,6 +12,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var move_dir = Input.get_vector("left", "right", "up", "down")
 	position += move_dir * speed * delta
+
+	# Impossibilitando que se mova para fora da tela
 	position.x = clamp(position.x, 0, screensize.x)
 	position.y = clamp(position.y, 0, screensize.y)
 	if move_dir.length() > 0:
@@ -31,6 +33,7 @@ func die():
 	animated_sprite_2d.play("hurt")
 	$CollisionShape2D.set_deferred("disabled", true)
 
+# Checa o overlap e emite um sinal correspondente com o grupo do objeto
 func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("coins"):
 		pickup.emit("coin")

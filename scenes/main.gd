@@ -124,5 +124,4 @@ func _on_hud_minus() -> void:
 func _on_hud_plus() -> void:
 	difficult = clampi(difficult + 1, 1, 10)
 	hud.update_difficult(difficult)
-	difficult = hud.difficult
 	respawn_cactus()
